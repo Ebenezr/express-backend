@@ -17,6 +17,10 @@ install npm packages
 ```
 npm install
 ```
+create mongo atlas account, touch a .env file then add your credentials
+```
+touch .env
+``` 
 start server
 ```
 npm start
