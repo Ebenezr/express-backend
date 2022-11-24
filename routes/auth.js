@@ -1,8 +1,9 @@
 const express = require("express");
-const router = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const User = require("../models/User"); 
+const User = require("../models/User");
+//  
+const router = express.Router();
 const privateKey = process.env.JWT_PRIVATE_KEY;
 const saltRounds = 10;
 
@@ -70,3 +71,4 @@ router.post("/register", async function (req, res, next) {
     }
   });
   
+  module.exports = router;
